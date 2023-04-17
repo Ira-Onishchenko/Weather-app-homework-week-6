@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="design/style.css" />
+    <script
+      src="https://kit.fontawesome.com/72c52c1947.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="shape">
+        <form class="buttons">
+          <input
+            type="search"
+            id="current-city"
+            placeholder="Enter the city"
+            autocomplete="off"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-btn"
+            id="search-input"
+          />
+        </form>
+        <button type="button" class="btn btn-success" id="currentLocBtn">
+          Current city
+        </button>
+        <h1 id="city"></h1>
+        <h5 id="country"></h5>
+        <br />
+        <ul>
+          <li class="dayTime" id="date">10 March</li>
+          <li class="dayTime" id="day">Friday, 10 March</li>
+          <li class="dayTime" id="time">18:35</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <span class="main-emoji">⛅</span>
+            <span id="temperature"></span>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li class="wind" id="description"></li>
+              <li class="wind" id="humidity">Humidity:</li>
+              <li class="wind" id="windSpeed">Wind:</li>
+            </ul>
+          </div>
+          <div class="row text-center">
+            <div class="col">
+              <div class="card">
+                <div class="card-friday">
+                  Friday
+                  <br />
+                  <span class="emoji">🌦</span>
+                  <br />
+                  +3°
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-day">
+                  Saturday
+                  <br />
+                  <span class="emoji">🌦</span>
+                  <br />
+                  +6°
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-day">
+                  Sunday
+                  <br />
+                  <span class="emoji">🌧</span>
+                  <br />
+                  +2°
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-day">
+                  Monday
+                  <br />
+                  <span class="emoji">🌤</span>
+                  <br />
+                  +1°
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-day">
+                  Tuesday
+                  <br />
+                  <span class="emoji">🌤</span>
+                  <br />
+                  +9°
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-day">
+                  Wednesday
+                  <br />
+                  <span class="emoji">⛅</span>
+                  <br />
+                  +1°
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link href="" />
+    <script src="JS/index.js"></script>
+  </body>
+</html>
