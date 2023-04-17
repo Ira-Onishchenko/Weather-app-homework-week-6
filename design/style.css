@@ -5,7 +5,10 @@ body {
 h4 {
   font-weight: bold;
 }
-
+p {
+  text-align: right;
+  padding: 0;
+}
 .shape {
   border: 1px solid;
   border-radius: 10px;
@@ -47,10 +50,6 @@ h4 {
   position: relative;
   top: -20px;
 }
-p {
-  text-align: right;
-  padding: 0;
-}
 .card-friday {
   font-weight: bold;
   font-size: 17px;
@@ -61,6 +60,13 @@ p {
 .emoji {
   font-size: 40px;
 }
+.github {
+  margin-left: 80px;
+  text-decoration: none;
+}
 #temperature {
   font-size: 45px;
+}
+#developer {
+  color: black;
 }
